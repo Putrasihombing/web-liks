@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('poto.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            max-width: 420px;
+            text-align: center;
+        }
+
+        .image img {
+            width: 130px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #cfd3d7;
+        }
+
+        .biodata h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #0078ff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            width: 120px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        td {
+            color: #555;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+            background: linear-gradient(45deg, #0078ff, #00c6ff);
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: linear-gradient(45deg, #005bb5, #0088cc);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Foto Profil -->
+        <div class="image">
+            <img src="feliks.jpg" alt="Foto Profil">
+        </div>
+
+        <!-- Biodata Diri -->
+        <div class="biodata">
+            <h2>Biodata Diri</h2>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Feliks Gabaniel Pasaribu</td>
+                </tr>
+                <tr>
+                    <th>Tanggal Lahir</th>
+                    <td>29 Januari 2001</td>
+                </tr>
+                <tr>
+                    <th>Alamat</th>
+                    <td>Jl. Cemara</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>likspasaribu@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Hobi</th>
+                    <td>Futsal dan Joging</td>
+                </tr>
+                <tr>
+                    <th>Karakter</th>
+                    <td>Emosi Dikit</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Media Sosial -->
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+        </div>
+    </div>
+</body>
+</html>
